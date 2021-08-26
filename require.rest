@@ -1,0 +1,28 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGl2IiwiaWF0IjoxNjI5OTk0NTAwLCJleHAiOjE2Mjk5OTQ1MTV9.isaeoT0P72I-qxGr8vQNIRnQ1MSBax3fvz1lU3h3gFU
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGl2IiwiaWF0IjoxNjI5OTk0OTY2LCJleHAiOjE2Mjk5OTQ5ODF9.KIe1cHO3-y50LxLHC60MwdLJmP2v1Le18wFPIt8ovxs"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGl2IiwiaWF0IjoxNjI5OTk0NTAwfQ.p-tT5Z_7pSwGRtpWb9PwUQhxDWLyhekAFU-B932yXZY"
+}
+
+###
+
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Div"
+}
